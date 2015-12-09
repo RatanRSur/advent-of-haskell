@@ -3,7 +3,6 @@ import Data.List.Split
 
 parseDims :: String -> [Int]
 parseDims str =map read $ splitOn "x" str
-{-parseDims str =map read $ filter (/="") $ splitOn "x" str-}
 
 sideAreas :: Int -> Int -> Int -> [Int]
 sideAreas l w h = [l * w, w * h, h * l]
